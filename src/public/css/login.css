@@ -1,0 +1,74 @@
+body{
+    background-image: url(https://blogs.unitec.mx/content/dam/blogs/imagenes/corp_samara/cocinando-en-master-chef-receta-de-trufas-de-chocolate-3.jpeg);   
+}
+
+.form-login-container{
+    position: relative;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    max-width: 500px;
+    margin: 100px auto;
+    color: #ffd261;
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.contenedor-form .toggle{
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid #ffd261;
+    border-bottom: 2px solid #ffd261;
+}
+
+.contenedor-form .toggle span{
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.contenedor-form .toggle:hover{
+    border-top: 2px solid whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.register-form{
+    position: relative;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    max-width: 500px;
+    color:#ffd261;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-left: auto;
+    border-radius: 5px;
+    padding: 60px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.regresar{
+    text-decoration: none;
+    color: beige;
+    background-color: rgb(253, 63, 61);
+    width: 15%;
+    border-radius: 18px;
+    margin-left: 355px;
+    padding-left: 0.6rem;
+}
+.regresar:hover{
+    color: beige;
+    background-color: rgb(206, 52, 50);
+}
+
+.group-btn {
+    display: flex;
+    justify-content: space-between;
+}

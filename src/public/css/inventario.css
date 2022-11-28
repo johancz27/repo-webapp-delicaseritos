@@ -1,0 +1,45 @@
+
+.group2{
+    margin-left: 15%;
+}
+
+.input2{
+    margin-top: -5rem;
+}
+
+label {
+    display: block;
+}
+
+.table{ 
+    position: relative;
+}
+
+.table > :not(caption) > * > * {
+    padding: .5rem .9rem;
+}
+.row {
+    border-spacing: 10px 5px;
+}
+
+.botonAg {
+    display: inline;
+}
+
+.botonI2 {
+    display: block;
+}
+/* .btndelete{
+	background: rgb(248, 73, 70);
+	border-radius: 500px;
+    position: absolute;
+    margin-top: 7px;
+} */
+.inputSubmit {
+    position: fixed;
+    margin-top: 23rem;
+}
+
+.table-responsive{ 
+    position: relative;
+}

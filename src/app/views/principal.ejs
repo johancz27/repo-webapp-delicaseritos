@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicaseritos Web App</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link href="/static/css/Vista.css" rel="stylesheet" type="text/css">
+  <link href="/static/css/sidebar.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <%- include('sidebar'); %>
+  <div class="wrapper">
+    <nav class="navbar navbar-dark bg-dark">
+      <%- include('top-bar'); %>
+      <a href="#" class="navbar-brand mx-auto"></a>
+    </nav>
+  
+    <div id="contenido" class="container">
+      <div class="row align-center">
+        <div class="col-sm-12 d-flex justify-content-center"></div>
+          <header class="title">
+            <br>
+            <h3>Bienvenido a DeliCaseritos Web App</h3>
+            <br>
+          </header>
+          <p>
+            Este es el aplicativo web del restaurante DeliCaseritos.
+            Explóralo y descubre todas sus funcionalidades para administrar tu inventario y producción.
+            <br>
+            ¡Automatiza tu restaurante y controla tus insumos!
+            <br>
+            <br>
+          </p>
+          <p>Agrega primero la información en las siguientes vistas para usar luego el inventario en el menú principal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <li class="contenedor-imgs col-sm-12 d-flex justify-content-center">
+      <div class="img-texto1">
+        <a href="/inventario/platos"><img src="/static/imgs/imagen-platos.jpg" alt="" height="60" width="60"/>
+          <span><b>Platos</b></span></a>
+      </div>
+      <div class="img-texto2">
+        <a href="/inventario/compras"><img src="/static/imgs/imagen-compra.jpg" alt="" height="60" width="60"/>
+        <span><b>Compras</b></span></a>
+      </div>
+      <div class="img-texto3">
+        <a href="/inventario/proveedores"><img src="/static/imgs/imagen-prove.jpg" alt="" height="60" width="60"/>
+        <span><b>Proveedores</b></span></a>
+      </div>
+    </li>
+  </div>
+
+  <!-- Button Modal -->
+  <button type="button" class="button1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Saber más
+  </button>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sobre DeliCaseritos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          DeliCaseritos es un restaurante de platos caseros a domicilio ubicado en
+          el barrio Prado. Luego de ir creciendo, se vio
+          en la necesidad de automatizar algunos de sus procesos; entre ellos,
+          el manejo del inventario y la regulación de sus insumos.
+          <br>
+          Como solución para automatizar dichos procesos, se creó este aplicativo web, con el 
+          que se puede almacenar toda la información relacionada con el inventario, tales como
+          la entrada y salida de insumos.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="buttonModal" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer> <a href="/acercade"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="copyright" class="svg-inline--fa fa-copyright fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 448c-110.532 0-200-89.451-200-200 0-110.531 89.451-200 200-200 110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200zm107.351-101.064c-9.614 9.712-45.53 41.396-104.065 41.396-82.43 0-140.484-61.425-140.484-141.567 0-79.152 60.275-139.401 139.762-139.401 55.531 0 88.738 26.62 97.593 34.779a11.965 11.965 0 0 1 1.936 15.322l-18.155 28.113c-3.841 5.95-11.966 7.282-17.499 2.921-8.595-6.776-31.814-22.538-61.708-22.538-48.303 0-77.916 35.33-77.916 80.082 0 41.589 26.888 83.692 78.277 83.692 32.657 0 56.843-19.039 65.726-27.225 5.27-4.857 13.596-4.039 17.82 1.738l19.865 27.17a11.947 11.947 0 0 1-1.152 15.518z"></path></svg></a></footer>
+
+  <!-- Javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="/static/js/sidebar.js" type="application/javascript"></script>
+</body>
+</html>
